@@ -5,12 +5,9 @@
 
     " User interface
     Plug 'tpope/vim-sensible'
-    "Plug 'Shougo/unite.vim' | Plug 'Shougo/vimfiler.vim'
     Plug 'terryma/vim-multiple-cursors'
 
     " Syntax checking
-    "Plug 'scrooloose/syntastic'
-    "Plug 'editorconfig/editorconfig-vim'
     Plug 'bronson/vim-trailing-whitespace'
 
     call plug#end()
@@ -55,17 +52,9 @@
     set cursorline                       " Highlight current line
 
     " Centralize backups, swapfiles and undo history
-    set backupdir=~/.vim/backup
-    set directory=~/.vim/swap
     if exists("&undodir")
         set undodir=~/.vim/undo
     endif
-
-    " Don’t create backups when editing files in certain directories
-    set backupskip=/tmp/*,~/tmp/*
-
-    " Ignore binary files
-    set wildignore=*.class,*.jar,*.zip,*.gzip,*.tar
 " }
 
 " vim-multiple-cursors {
@@ -76,29 +65,6 @@
     let g:multi_cursor_prev_key = '<C-p>'
     let g:multi_cursor_skip_key = '<C-x>'
     let g:multi_cursor_quit_key = '<Esc>'
-" }
-
-" ctrl-p {
-"    set runtimepath^=~/.vim/plugged/ctrlp.vim
-"    let g:ctrlp_working_path_mode = 'a'
-"    let g:ctrlp_max_files = 50000
-"    let g:ctrlp_custom_ignore = {
-"        \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-"        \ 'file': '\v\.(exe|so|dll|jar|class|zip|tar|gz)$' }
-" }
-
-" easymotion {
-    " Disable EasyMotion default mappings
-    " let g:EasyMotion_do_mapping = 0
-
-    " EasyMotion one or two character mapping
-    " nmap f <Plug>(easymotion-s)
-
-    " Replace default search with EasyMotion one
-    " map  / <Plug>(easymotion-sn)
-    " omap / <Plug>(easymotion-tn)
-    " map  n <Plug>(easymotion-next)
-    " map  N <Plug>(easymotion-prev)
 " }
 
 " emmet-vim {
