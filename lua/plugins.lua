@@ -3,12 +3,20 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
+  -- Navigation
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		requires = {
 			{'nvim-lua/plenary.nvim'}
 		}
 	}
+
+  use({
+    'ggandor/leap.nvim',
+    requires =  {
+      {'tpope/vim-repeat'}
+    }
+  })
 
   use {
     'folke/which-key.nvim',
@@ -148,20 +156,6 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/playground'
   use 'mbbill/undotree'
 	use 'nvim-treesitter/nvim-treesitter-context'
-
-	-- Navigation
-  use {
-    'smoka7/hop.nvim',
-    tag = '*',
-    config = function()
-      -- you can configure Hop the way you like here; see :h hop-config
-      require('hop').setup {
-        keys = 'etovxqpdygfblzhckisuran',
-        case_insensitive = false,
-        uppercase_labels = false,
-      }
-    end
-  }
 
   -- Comments
   use {
