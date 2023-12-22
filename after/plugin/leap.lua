@@ -17,5 +17,3 @@ vim.keymap.del({ 'v' }, 'S')
 -- vim.keymap.set({ 'o', 'x' }, '<C>x', '<Plug>(leap-forward-till)')
 -- vim.keymap.set({ 'o', 'x' }, '<C>X', '<Plug>(leap-backward-till)')
 
-
-

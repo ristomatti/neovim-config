@@ -9,23 +9,17 @@ augroup('YankHighlight', { clear = true })
 autocmd('TextYankPost', {
   group = 'YankHighlight',
   callback = function()
-    vim.highlight.on_yank({ higroup = 'IncSearch', timeout = '1000' })
+    vim.highlight.on_yank({ higroup = 'IncSearch', timeout = '500' })
   end
 })
-
--- Disable line length marker
---autocmd('Filetype', {
---  group = 'setLineLength',
---  pattern = { 'text', 'markdown', 'html', 'xhtml', 'javascript', 'typescript' },
---  command = 'setlocal cc=0'
---})
 
 -- Set indentation to 2 spaces
 augroup('setIndent', { clear = true })
 autocmd('Filetype', {
   group = 'setIndent',
-  pattern = { 'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
-    'yaml', 'yml','lua', 'json', 'yaml', 'caddyfile', 'sh', 'bash'
+  pattern = {
+    'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
+    'yaml', 'yml', 'json', 'caddyfile', 'sh', 'bash', 'python'
   },
   command = 'setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab'
 })
