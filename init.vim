@@ -4,11 +4,11 @@
     call plug#begin()
 
     " User interface
-    Plug 'tpope/vim-sensible'
+    " Plug 'tpope/vim-sensible'
     Plug 'terryma/vim-multiple-cursors'
 
     " Syntax checking
-    Plug 'bronson/vim-trailing-whitespace'
+    " Plug 'bronson/vim-trailing-whitespace'
 
     call plug#end()
 "}
