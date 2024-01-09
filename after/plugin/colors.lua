@@ -13,9 +13,14 @@ function SetTheme(color, overrideBgColor)
   vim.cmd.colorscheme(color)
 
   if (overrideBgColor) then
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    OverrideBgColor()
   end
 end
 
-vim.cmd.colorscheme('meh')
+function OverrideBgColor()
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
+SetTheme('meh', true)
+
