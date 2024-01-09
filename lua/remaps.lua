@@ -13,11 +13,11 @@ map('n', '<Leader>Q', '<Cmd>q!<CR>', opts)
 --map('n', '<Leader>e', ':edit<Space>', { noremap = true})
 
 -- Remap fugitive git commands
-map('n', '<Leader>gs', '<Cmd>Git<CR>', opts)
-map('n', '<Leader>gb', '<Cmd>Gblame<CR>', opts)
-map('n', '<Leader>gc', '<Cmd>Gcommit<CR>', opts)
-map('n', '<Leader>gl', '<Cmd>log<CR>', opts)
-map('n', '<Leader>gp', '<Cmd>push', opts)
+-- map('n', '<Leader>gs', '<Cmd>Git<CR>', opts)
+-- map('n', '<Leader>gb', '<Cmd>Gblame<CR>', opts)
+-- map('n', '<Leader>gc', '<Cmd>Gcommit<CR>', opts)
+-- map('n', '<Leader>gl', '<Cmd>log<CR>', opts)
+-- map('n', '<Leader>gp', '<Cmd>push', opts)
 
 -- Move to previous/next
 map('n', '<M-j>', '<Cmd>BufferPrevious<CR>', opts)
@@ -37,7 +37,7 @@ map('n', '<M-8>', '<Cmd>BufferGoto 8<CR>', opts)
 map('n', '<M-9>', '<Cmd>BufferGoto 9<CR>', opts)
 map('n', '<M-0>', '<Cmd>BufferLast<CR>', opts)
 map('n', '<M-p>', '<Cmd>BufferPin<CR>', opts)
-map('n', '<M-w>', '<Cmd>BufferClose<CR>', opts)
+map('n', '<M-d>', '<Cmd>BufferClose<CR>', opts)
 map('n', '<Leader>d', '<Cmd>BufferClose<CR>', opts)
 
 -- Window management
