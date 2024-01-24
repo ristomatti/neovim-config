@@ -21,10 +21,10 @@ set_opts {
   hlsearch = false,          -- don't highlight all matches of last search pattern
   incsearch = true,          -- show where a pattern matches as you type
   termguicolors = true,      -- enable true color support
-  scrolloff = 8,             -- keep at least 8 lines above/below the cursor
+  scrolloff = 6,             -- keep at least 8 lines above/below the cursor
   signcolumn = 'yes',        -- always show signcolumn
   updatetime = 50,           -- time to wait in milliseconds before swap file is written to disk
-  colorcolumn = '110',       -- highlight column at position 80
+  colorcolumn = '120',       -- highlight column at position 80
   pastetoggle = 'auto',      -- enable paste mode
 }
 
