@@ -12,12 +12,16 @@ map('n', '<Leader>Q', '<Cmd>q!<CR>', opts)
 
 --map('n', '<Leader>e', ':edit<Space>', { noremap = true})
 
--- Remap fugitive git commands
--- map('n', '<Leader>gs', '<Cmd>Git<CR>', opts)
--- map('n', '<Leader>gb', '<Cmd>Gblame<CR>', opts)
--- map('n', '<Leader>gc', '<Cmd>Gcommit<CR>', opts)
--- map('n', '<Leader>gl', '<Cmd>log<CR>', opts)
--- map('n', '<Leader>gp', '<Cmd>push', opts)
+-- Fugitive mappings
+map('n', '<Leader>gb', '<Cmd>Git blame<CR>', opts)
+map('n', '<Leader>gcc', '<Cmd>Git commit<CR>', opts)
+map('n', '<Leader>gca', '<Cmd>Git commit --amend<CR>', opts)
+map('n', '<Leader>gcf', ':Git commit --fixup=', { noremap = true })
+map('n', '<Leader>gcm', ':Git commit -m ""', { noremap = true })
+map('n', '<Leader>gd', '<Cmd>Git diff<CR>', opts)
+map('n', '<Leader>gl', '<Cmd>Git log<CR>', opts)
+map('n', '<Leader>gp', '<Cmd>Git push<CR>', opts)
+map('n', '<Leader>gs', '<Cmd>Git status<CR>', opts)
 
 -- Move to previous/next
 map('n', '<M-j>', '<Cmd>BufferPrevious<CR>', opts)
