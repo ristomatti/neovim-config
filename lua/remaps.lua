@@ -57,3 +57,6 @@ map('n', '<M-S-j>', '<C-W>q', { noremap = true }) -- close
 map('n', '<M-S-k>', '<C-W>s', { noremap = true }) -- split horizontally
 map('n', '<M-S-l>', '<C-W>v', { noremap = true }) -- split vertically
 
+-- Smart <Home> behavior
+map('i', '<Home>', '<C-O>^', opts)
+

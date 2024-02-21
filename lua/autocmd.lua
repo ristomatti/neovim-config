@@ -19,7 +19,7 @@ autocmd('Filetype', {
   group = 'setIndent',
   pattern = {
     'xml', 'html', 'xhtml', 'css', 'scss', 'javascript', 'typescript',
-    'yaml', 'yml', 'json', 'caddyfile', 'sh', 'bash', 'python'
+    'yaml', 'yml', 'json', 'caddyfile', 'sh', 'bash', 'lua'
   },
   command = 'setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab'
 })

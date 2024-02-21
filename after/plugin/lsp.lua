@@ -13,20 +13,20 @@ lsp.nvim_workspace()
 local cmp = require('cmp')
 
 -- Manually trigger autocompletion
-cmp.setup({
-	completion = {
-		autocomplete = false
-	},
-	mapping = {
-		['C-Space'] = cmp.mapping.complete(),
-		['M-Space'] = cmp.mapping.complete()
-	}
-})
-cmp.setup.buffer {
-	completion = {
-		autocomplete = false
-	}
-}
+-- cmp.setup({
+-- 	completion = {
+-- 		autocomplete = false
+-- 	},
+-- 	mapping = {
+-- 		['C-Space'] = cmp.mapping.complete(),
+-- 		['M-Space'] = cmp.mapping.complete()
+-- 	}
+-- })
+-- cmp.setup.buffer {
+-- 	completion = {
+-- 		autocomplete = false
+-- 	}
+-- }
 
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -69,6 +69,7 @@ lsp.on_attach(function(client, bufnr)
 
   opts = { silent = true, noremap = true }
   vim.keymap.set("n", "<leader>vs", '<cmd>Telescope lsp_workspace_symbols<cr>', opts)
+  vim.keymap.set("n", "<A-s>", '<cmd>Telescope lsp_workspace_symbols<cr>', opts)
 end)
 
 lsp.setup()

@@ -20,6 +20,17 @@ return require('packer').startup(function(use)
     }
   })
 
+  -- Editing
+  use({
+      'kylechui/nvim-surround',
+    tag = '*', -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require('nvim-surround').setup({
+        i = { '' },
+      })
+    end
+  })
+
   -- Training wheels
   use {
     'folke/which-key.nvim',
