@@ -209,7 +209,6 @@ return require('packer').startup(function(use)
   -- Syntax
   use 'potatoesmaster/i3-vim-syntax'
   use 'sngn/vim-i3blocks-syntax'
-  use 'kmonad/kmonad-vim'
 
   -- Syntax (enable if still needed)
   -- use 'maxmellon/vim-jsx-pretty'
